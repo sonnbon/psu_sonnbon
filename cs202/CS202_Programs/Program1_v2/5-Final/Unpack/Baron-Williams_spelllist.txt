@@ -1,0 +1,12 @@
+25|Forest|0.5|Mossiamo
+26|Forest|1.3|Fernlosah
+27|Forest|2.5|Herbiosa Magnum
+28|Fire|4.6|Burnium
+29|Fire|1.6|Tengo Calor
+30|Fire|0.7|Flamosa Emberentha
+31|Water|3.4|Awkwafina
+32|Water|2.3|Sprinkliana
+33|Water|4.9|Tsunamico
+34|Desert|0.8|Kombucha Sandiola
+35|Desert|2.1|Fossil Monduso
+36|Desert|3.9|Sand Stormio Miragio

@@ -1,0 +1,188 @@
+Connor Williams
+CS 162 - Introduction to Computer Science
+May 16, 2021
+
+Algorithm: Song Playlist Building Program (Program 4)
+
+In order to keep the data for the Song Playlist Building Program organized, a 
+structure, named 'song', will be created to hold five members, allowing the
+program to store an artist, a song title, a type of music, information on when 
+a user likes to listen to a song, and the link url information to access a song.
+A class, named 'playlist', will also be created to hold three data members,
+allowing the user to build a song playlist, choose the size of that playlist,
+and add as many songs to the playlist as they want up to that size.
+
+The function, 'welcome', will welcome the user, explaining what the program is 
+and how to use it properly. Function takes no arguments and returns nothing.
+
+The function, 'menu', will prompt the user to make a choice on how they would
+like to use the program, read in as a whole number. The options of the menu 
+include, 1: Add new songs, 2: Display all songs, 3: Search for particular songs,
+and 4: Edit a particular song. This function takes no arguments and returns an
+integer.
+
+The member function from the 'playlist' class, 'playlist', will initialize the
+size of the playlist the user wishes to build and will initialize the number of
+songs to be stored as zero. The function prompts the user to enter how big their
+playlist should be, as a whole number. The users response will be stored and 
+dynamically allocated to the 'song' structures 'playlist' array size. This
+constructor function takes no arguments and returns nothing.
+
+The member destructor function from the 'playlist' class, '~playlist', will 
+deallocate the memory from 'song' structures 'playlist' array and reset the 
+chosen size of the playlist and the number of songs to zero. This destructor
+function takes no arguments and returns nothing.
+
+The function, 'read_song', prompts the user to enter an artist, to enter the 
+title of the song, to enter the type of music, to enter when they like to listen
+to that song, and to enter the link url to access the song. The user's inputs 
+are read in separately after each prompt and stored accordingly to the 'song'
+structure's respective members. This function takes the 'song' data type,
+passing the variable 'a_song' by reference, as an argument and returns nothing.
+
+The function, 'display_song', displays the song that is read in from the
+function, 'read_song', back to the user. In a printed out statement, the 
+function will display the user's inputted song artist, title, genre, when they 
+like to listen to it, and the link url to access the song, all on separate 
+lines. This function takes the 'song' data type, passing the variable 'a_song' 
+by reference, as an argument and returns nothing.
+
+The member function from the 'playlist' class, 'add_more', will prompt the user
+whether they would like to add a new song. If their response is neither yes nor
+no, then an error message will prompt them to try again. If the response is yes,
+the function will store true. Otherwise, if the response is no, the function 
+will store false. This function takes no arguments and returns true or false.
+
+The member function from the 'playlist' class, 'read_all', will allow the user 
+to add as many songs as they would like within the bounds of the size of the
+playlist array that they set. If the number of songs is less than the 
+dynamically allocated size of the playlist array, the 'read_song' function will 
+get called, allowing the user to enter a new song. If the number of songs is 
+still less than the user allocated size, then the member function, 'add_more',
+will get called and check if the user would like to add another song. While that
+member function returns true and the number of songs is less than the user
+allocated size, the user will keep getting to add songs. Otherwise, the playlist
+is full and the user will be informed of this, or the user answered no,
+'add_more' return false, and the function exits. This function takes no 
+arguments and returns nothing.
+
+The member function from the 'playlist' class, 'display_all', will display 
+everything that is read in from the function, 'read_all', back to the user, song
+by song. If there are no songs, a message will display informing the user.
+Otherwise, the function, 'display_song', will get called and repeat again, 
+taking the playlist array's index as its argument, incrementing by one index 
+until the number of songs has been reached. This function takes no arguments 
+and returns nothing.
+
+The member function from the 'playlist' class, 'search_type', will prompt and 
+read in whether the user wants to search by artist, song title, genre, when 
+they like to listen to a song, or link url. If the user's response is 1, 2, 3,
+4, or 5, which represents searching by artist, title, genre, when they like to 
+listen, or link url, respectively, the number will be stored. This function 
+takes no arguments and returns an integer.
+
+The member function from the 'playlist' class, 'find_artist', will prompt the
+user to enter which artist they would like to search by. Iterating through
+the number of songs, the function will string compare the users input with each
+'artist' member of the 'song' structure's 'playlist' array and display any
+matches. If there are matches, the function stores true. Otherwise, it stores
+false. This function takes no arguments and returns true or false.
+
+The member function from the 'playlist' class, 'find_title', will prompt the
+user to enter which title they would like to search by. Iterating through
+the number of songs, the function will string compare the users input with each
+'title' member of the 'song' structure's 'playlist' array and display any
+matches. If there are matches, the function stores true. Otherwise, it stores
+false. This function takes no arguments and returns true or false.
+
+The member function from the 'playlist' class, 'find_genre', will prompt the
+user to enter which genre they would like to search by. Iterating through
+the number of songs, the function will string compare the users input with each
+'genre' member of the 'song' structure's 'playlist' array and display any
+matches. If there are matches, the function stores true. Otherwise, it stores
+false. This function takes no arguments and returns true or false.
+
+The member function from the 'playlist' class, 'find_listen', will prompt the
+user to enter when they like to listen to a song as the search parameter. 
+Iterating through the number of songs, the function will string compare the 
+users input with each 'listen' member of the 'song' structure's 'playlist' array
+and display any matches. If there are matches, the function stores true. 
+Otherwise, it stores false. This function takes no arguments and returns true or
+false.
+
+The member function from the 'playlist' class, 'find_link', will prompt the
+user to enter which link they would like to search by. Iterating through
+the number of songs, the function will string compare the users input with each
+'link' member of the 'song' structure's 'playlist' array and display any
+matches. If there are matches, the function stores true. Otherwise, it stores
+false. This function takes no arguments and returns true or false.
+
+The member function from the 'playlist' class, 'search', will call a 'find' 
+member function (find_artist, find_title, etc.) and search and display any song
+matches. If there are no songs in the playlist, a message will display to the 
+user informing them. Otherwise, the 'search_type' member function is called. If
+a 1, 2, 3, 4, or 5 is returned then the 'find_artist', 'find_title', 
+'find_genre', 'find_listen', or 'find_link' member function is called, 
+respectively. Otherwise, if an integer other than those numbers is returned, an
+error message will display to the user, prompting them to try again. While the 
+returned integer is invalid, the function will loop back to calling the 
+'search_type' function again. If none of the 'find' functions returned true,
+then a message is displayed to the user, informing them there were no matches 
+found. This function takes no arguments and returns nothing.
+
+The member function from the 'playlist' class, 'edit_choice', will display all
+the songs with a number listed next to each, allowing the user to choose a song
+they wish to edit by number. The user will be prompted to enter which song they
+wish to edit, entered as a whole number. The number is read in and stored. This 
+function takes no arguments and returns an integer.
+
+The member function from the 'playlist' class, 'edit_artist', will allow the
+user to edit the artist of a song. The user will be prompted to update the
+artist. The users input will be read in and assigned to the playlist arrays 
+index number of its respective 'artist' member returned from the member 
+function 'edit_choice'. This function takes an integer, passed by value, as
+an argument and returns nothing.
+
+The member function from the 'playlist' class, 'edit_title', will allow the
+user to edit the title of a song. The user will be prompted to update the
+title. The users input will be read in and assigned to the playlist arrays 
+index number of its respective 'title' member returned from the member 
+function 'edit_choice'. This function takes an integer, passed by value, as
+an argument and returns nothing.
+
+The member function from the 'playlist' class, 'edit_genre', will allow the
+user to edit the genre of a song. The user will be prompted to update the
+genre. The users input will be read in and assigned to the playlist arrays 
+index number of its respective 'genre' member returned from the member 
+function 'edit_choice'. This function takes an integer, passed by value, as
+an argument and returns nothing.
+
+The member function from the 'playlist' class, 'edit_listen', will allow the
+user to edit when they like to listen to a song. The user will be prompted to 
+update when they like to listen. The users input will be read in and assigned to
+the playlist arrays index number of its respective 'listen' member returned from
+the member function 'edit_choice'. This function takes an integer, passed by 
+value, as an argument and returns nothing.
+
+The member function from the 'playlist' class, 'edit_link', will allow the
+user to edit the link of a song. The user will be prompted to update the
+link. The users input will be read in and assigned to the playlist arrays 
+index number of its respective 'link' member returned from the member 
+function 'edit_choice'. This function takes an integer, passed by value, as
+an argument and returns nothing.
+
+The member function from the 'playlist' class, 'edit', will allow the user to
+choose which part of a song's information they would like to edit. The member
+function, 'edit_choice', is first called to get the returned value of which
+song the user wishes to edit. The function, 'display_song' is then called, with
+the returned value as the playlist arrays index number. The user is then
+prompted to enter which part of the song they would like to edit, entered as a
+whole number. The user can enter 1, 2, 3, 4, or 5, which represents the artist,
+title, genre, when they like to listen, or link, respectively. If the user
+enters 1, 2, 3, 4, or 5, then the member function 'edit_artist', 'edit_title',
+'edit_genre', 'edit_listen', or 'edit_link' gets called, respectively.
+Otherwise, the user entered an invalid number and they are prompted to try
+again. This function takes no arguments and returns nothing.
+
+The function, 'exit', will display an exiting message to the user. This function
+takes no arguments and returns nothing.

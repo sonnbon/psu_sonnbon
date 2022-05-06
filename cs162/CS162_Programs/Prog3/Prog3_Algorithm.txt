@@ -1,0 +1,146 @@
+Connor Williams
+CS 162 - Introduction to Computer Science
+May 3, 2021
+
+Algorithm: Song Playlist Building Program
+
+In order to keep the data for the Song Playlist Building Program organized, a 
+structure, named 'song', will be created to hold five members, allowing the
+program to store (up to 10) an artist, a song title, a type of music, 
+information on when a user likes to listen to a song, and the link url
+information to access a song. The following functions will take this structure 
+data type as an argument, allowing a user to build a song playlist, referring 
+to these members as 'artist', 'title', 'genre', 'listen', and 'link', 
+respectively. First, the user will be welcomed, have the process of using the
+program explained, and be informed of any invalid inputs that will not be
+accepted.
+
+The function, 'read_song', prompts the user to enter an artist, to enter the 
+title of the song, to enter the type of music, to enter when they like to listen
+to that song, and to enter the link url to access the song. The user's inputs 
+are read in separately after each prompt and stored accordingly to the 'song'
+structure's respective members. This function takes the 'song' data type,
+passing the variable 'a_song' by reference, as an argument and returns nothing.
+
+The function, 'display_song', displays the song that is read in from the
+function, 'read_song', back to the user. In a printed out statement, the 
+function will display the user's inputted song artist, title, genre, when they 
+like to listen to it, and the link url to access the song, all on separate 
+lines. This function takes the 'song' data type, passing the variable 'a_song' 
+by reference, as an argument and returns nothing.
+
+The function, 'read_all', will allow the user to enter up to 10 songs or less,
+which ever they prefer. They will first be prompted if they would like to add
+a new song. If the user's response is neither yes nor no, an error message will
+get displayed to the user and they will be prompted the yes or no question 
+again. If the user's response is yes, then, as long as the number of songs 
+entered so far is less than 10, the 'read_song' function will get called, 
+allowing the user to enter a new song. The user will keep getting prompted if 
+they would like to add a new song until their response is no or the number of 
+songs reaches 10. If the user's response is no, the prompts will stop and the
+number of songs will be stored. This function takes the 'song' data type,
+passing the array variable 'playlist', and an integer variable 'num_of_songs',
+passed by reference, as arguments and returns nothing.
+
+The function, 'display_all', will display everything that is read in from the
+function, 'read_all', back to the user, song by song. The function,
+'display_song', will get called and repeat again, taking the 'playlist' array's
+index as its argument, incrementing by one index until the number of songs has 
+been reached. This function takes the 'song' data type, passing the array
+variable 'playlist', and an integer variable 'num_of_songs', passed by value, as
+arguments and returns nothing.
+
+The function, 'save', will save the songs that have been inputted by the user
+and read in to an external data file named, "song.txt". First, a connection for
+output must be made with the text file. If the connection is good, then the 
+indexed element of the 'playlist' array's associated artist, title, genre, when
+the user listens to the song, and link url to access the song, will be outputted
+to the text file. After each element output, the index will increment by one, 
+until the number of songs inputted by the user and read in is reached. While 
+each song is outputted to the text file, each member will be separated by a 
+pipe, '|'. Once the total number of songs is outputted to the text file, the 
+function then closes the file. This function takes the 'song' data type, passing
+the array variable 'playlist', and an integer variable 'num_to_save', passed 
+by value, as arguments and returns nothing.
+
+The function, 'load', will read in the songs from an external data file named,
+"song.txt". First, a connection for input must be made with the text file. If
+the connection is good, then the function will read in the first element of the
+'playlist' array's associated artist, making sure to use the pipe, '|', as its
+delimiter. Then, while the array's index is less than the total allowed number
+of songs (up to 10) and there is not an end of file flag, read in the indexed
+element of the 'playlist' array's associated title, genre, when the user likes
+to listen to the song, and the link url to access the song, all individually 
+making sure to use the pipe, '|', as their delimiter. After reading in the link 
+url, increment the index by one, then read in the indexed element of the 
+'playlist' array's associated artist, making sure to use the pipe, '|', as its 
+delimiter. This will then repeat from reading in the next title element until 
+the index number is no longer less than the total allowed number of songs (up to 
+10) or there is nothing else to read in. When this is done looping, the function 
+will close the file. The function then returns the index number. This function 
+takes the 'song' data type, passing the array variable 'playlist' as an argument 
+and returns an integer to keep track of the number of songs read in from the 
+file.
+
+The function, 'is_search', will prompt and read in whether the user would like
+to search for a particular list of songs. If the response is neither yes nor no, 
+an error message will get displayed to the user and they will be prompted the 
+yes or no question again. If the user's response is yes, the function will store 
+the result as true. Otherwise, the function will return false. This function 
+takes no arguments and returns true or false.
+
+The function, 'search_type', will prompt and read in whether the user wants to
+search by artist, song title, genre, or when they like to listen to a song (will
+not search by link, as a link will always output a unique song rather than a
+list of songs matching the same search parameter). If the user's response is
+'artist', the function will store the character 'a'. If the user's response is
+'title', the function will store the character 't'. If the user's response is
+'genre', the function will store the character 'g'. If the user's response is
+'listen', the function will store the character 'l'. Otherwise, an error message
+will get displayed to the user and they will be prompted the question again.
+This function takes no arguments and returns a character 'a', 't', 'g', or 'l'.
+
+The function, 'is_match', will prompt the user to input the artist, title,
+genre, or when they like to listen based on the returned character from the
+function, 'search_type'. Iterating through a loop, if the returned character is 
+'a', the user will be prompted to enter in the artist they are searching for. 
+The user's input will then be string compared to the 'playlist' array's indexed
+element associated artist. If there is a match, store the result as true. If the
+returned character is 't', the user will be prompted to enter in the title they 
+are looking for. The user's input will then be string compared to the 'playlist'
+array's indexed element associated title. If there is a match, store the result
+as true. If the returned character is 'g', the user will be prompted to enter in
+the genre they are looking for. The user's input will then be string compared to
+the 'playlist' array's indexed element associated genre. If there is a match,
+store the result as true. If the returned character is 'l', the user will be 
+prompted to enter in when they like to listen to a song. The user's input will
+then be string compared to the 'playlist' array's indexed element associated
+'listen'. If there is a match, store the result as true. Otherwise, store the
+result as false. If there was a match for any of the user's inputs, the
+function, 'display_song', will be called, taking the 'playlist' array's indexed
+element as its argument. The index will then increment by one and the loop will
+start over checking for the same match in the next 'playlist' element for each
+member. This will loop until the number of songs entered has been iterated
+through. If no matches are ever found, no songs will be displayed to the user.
+Instead, a message letting the user know that no matches were found will be
+displayed. This function takes the 'song' data type, passing the array
+variable, 'playlist', and the user's character input, passed by value, as
+arguments and returns true or false.
+
+The function, 'bad_response', will be used in place whenever a user inputs an
+invalid response to a yes or no question. It will display an error message
+to the user whenever having to do with a yes or no question mentioned in the
+aboved functions. It will check that the user's response was neither yes nor no
+and store the result as true. It will then display the error message, telling
+the user to try again. Otherwise, the response is valid and the function will 
+return false. This function takes the user's character response as an argument
+and returns true or false.
+
+The function, 'bad_input', will be used in place whenever a user inputs an
+invalid value having to do with how the user wants to search ('a', 't', 'g', or 
+'l' not entered when prompted by the 'search_type' function). It will check that
+the user's response was neither 'a', 't', 'g', nor 'l' and store the result as
+true. It will then display the error message, telling the user to try again. 
+Otherwise, the response is valid and the function will return false. This 
+function takes the user's character response as an argument and returns true or 
+false.

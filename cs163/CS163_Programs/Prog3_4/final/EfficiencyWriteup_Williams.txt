@@ -1,0 +1,79 @@
+********************************************************************************
+Author: Connor Williams
+Date: August 6, 2021
+Course: CS163 Data Structures
+Assignment: Program 3/4
+Filename: EfficiencyWriteup_Williams.txt
+********************************************************************************
+
+For this assigned application, both data structures seemed to work relatively
+well. The Binary Search Tree (BST) worked especially well for the purposes of
+this assignment. It automatically sorted data as it was added making the 
+displaying of all the information a simple recursive function. Adding data was
+very easy as well because the data just went to the correct leaf and added on
+to it. The Hash Table worked well too, especially for the purposes of this
+assignment. However, if there was an unlimited amount of time, more tweaking 
+could be done to improve the Hash Table to make it even more efficient. Its
+size and hash function capability was a big deciding factor in how well the 
+data structure would work for this program.
+
+I think these two data structures were the best choice for this assignment. The
+scope of this problem generally asked for the insertion, retrieval, or removal 
+of animals to or from a list of animals. For insertion, a Hash Table's worst 
+case performance scenario is O(1), which is incredible. For a BST, the worst 
+case is O(N), but its best case performance scenario is still a promising
+O(logN). While the BST might be traversing every node, it is unlikely if the 
+data being inserted is not already sorted. Also, while the BST might be
+traversing more, in general, it is sorting the data automatically, which is a
+nice compromise for weaker performance. For retrieval and removal, a Hash
+Table's worst case performance scenario is O(chain length), which is really
+efficient, especially if there are not many collisions. For a BST, a best and
+worst case scenario is O(logN), which is good with the added bonus that the
+data is still sorted.
+
+On the subject of efficiency and in terms of this specific program with the
+external file used for testing ("foster_roster_Williams.txt"), I was able to
+take an even closer look at how these data structures worked. The external file
+used had 47 unique animals in it. For the Hash Table, I tried different table
+sizes to compare the number of collisions versus unique indices versus number of
+indices left NULL. The hash function I created added the ASCII values of all the 
+characters of the animal's type and breed together. It then modulated that sum
+over the table size to get the index to be used for insertion in the Hash Table. 
+
+I first tried a table size of 101. With this size there were approximately 26
+collisions at 10 different indices. This means there were 21 unique indices 
+(44.7% of entries had a unique index) with no collisions. This also means that
+more than 1 in 2 insertions ended in a collision. After all the insertions,
+only 31 indices were used, leaving 70 empty. I then tested a Hash Table of size
+47. Insertion using this size resulted in approximately 27 collisions at 10
+indices. In this instance, there were only 14 unique indices (29.8%), 25
+indices used, and 22 empty indices. Finally, I tested a table of size 64 (a
+number that is the power of 2). This resulted in 37 collisions at 15 indices.
+This means that there were more than 3 in 4 entries that resulted in a
+collision. There were 9 unique indices (19.1%), 24 indices used, and 40 indices
+unused. Clearly, the table size of a prime number performed the best. However, 
+there is still the issue of unused indices, which means further tinkering would 
+need to be done, such as finding a better table size or changing the hash 
+function entirely, to help the data structure perform more efficiently. Of the 
+different tests, the table of size 47 had the longest chain of collisions, which 
+obviously means that there are animals of different types and breeds in a 
+specific index. This is really inefficient. However, the collisions in the table 
+of size 101 almost work out to be all unique types and breeds, which makes sense 
+for the purpose of the assignment. Even though it means traversal, it also means 
+we have similar data grouped together.
+
+For the BST, the main take away in terms of efficiency was its resulting height.
+The data imported from the external file resulted in a BST height of 10. In this
+case, since we know this about the table, retrieval of an item will only take,
+at most, 10 comparisons. Out of 47 animal entries, this is a really efficient
+traversal.
+
+If I had more time with this assignment, I would definitely mess around more
+with the hash function and the Hash Table size. I would love to create a hash
+function that creates more unique data than just adding together an animal's
+type and breed individual character ASCII values. I would also love to be able
+to find the smallest table size possible with the least amount of collisions, so
+memory is not wasted. I really loved working with the BST and feel it worked
+best for the scope of this project. However, it would be fun to experiment with
+balances trees or even graphs, which would connect animal's by a certain trait.
+

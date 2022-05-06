@@ -1,0 +1,12 @@
+13|Forest|20|Tree Bark
+14|Forest|5|Moss Groundcover
+15|Forest|10|Giant Mushroom Cap
+16|Fire|9|Burning Ember
+17|Fire|13|Ring of Fire
+18|Fire|5|Rain of Ash
+19|Water|13|Seashell
+20|Water|21|Crustacean Station
+21|Water|10|Tuna Can
+22|Desert|11|Dune Patrol
+23|Desert|4|Fossil
+24|Desert|8|Cracked Cowboy Hat

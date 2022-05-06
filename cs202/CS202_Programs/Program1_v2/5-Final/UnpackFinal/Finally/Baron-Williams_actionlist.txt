@@ -1,0 +1,12 @@
+1|Forest|-10|Tree Branch
+2|Forest|-5|Mushrooms
+3|Forest|-7|Deadly Flower
+4|Fire|-20|Hot Dagger
+5|Fire|-18|Flame Sword
+6|Fire|-1|Lit Match
+7|Water|-12|Icicle
+8|Water|-4|Overflowing Cup
+9|Water|-10|Acid Rain Needle
+10|Desert|-42|Cactus
+11|Desert|-2|Sand Sword
+12|Desert|-3|Dune Arrow

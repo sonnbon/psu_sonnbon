@@ -1,0 +1,87 @@
+Connor Williams
+CS163 - Data Structures
+Program Assignment #2
+July 23, 2021
+
+Review 2
+
+Overall, the two data structures worked very well with the assigned application.
+However, I believe the stack's Linear Linked List (LLL) of Arrays data structure 
+was a better choice than the queue's Circular Linked List (CLL) data structure.
+For the purpose of this application, we wanted to push each queue onto the top
+of the stack, representing a list holding each attempt of trying to complete an
+activity. The stack was a good choice because it imitates a sort of archiving of
+each queue, allowing the client to have access to the most recent attempt at 
+completing an activity. If the user chooses to see all the attempts, the client
+can display the entire stack sorted from most recent to the oldest. This is 
+extremely useful and is achieved efficiently. To see the top of the stack, it 
+takes very few steps. To display everything, the program does need to traverse 
+through every element of every node, but the list is already sorted by only 
+having to push data to the top of the stack. On the other hand, the queue's CLL 
+did not really show any significant benefit as compared to other list types. When
+adding tasks, or enqueuing, to complete an activity through the client, we are 
+adding at the rear of the list. In doing so, when we display the data, we must 
+make sure we are displaying from the front of the list first (rear's next 
+pointer), so everything looks sorted in order, starting at task one. More 
+notable, when we remove an item, or dequeue, we remove from the front of the 
+list first when working with a CLL. When we display the data after this, we lose
+the oldest task first (first in, first out). So, if we have five tasks, listed 
+from 1 to 5, and we decide to dequeue, then we are left with four tasks, listed
+from 2 to 5. Whether we decide to then display the data next or enqueue a node, 
+the resulting data will not make a lot of sense. Displaying the data would give 
+us a list missing the first task. Enqueuing the data would give us the list, 
+tasks 2, 3, 4, 5, 1. In terms of the assigned application, this is not a very 
+useful list when trying to manipulate a list of tasks to complete an activity. 
+We really need to be able to either edit specific tasks or remove all items and 
+start over completely.
+
+For the list of tasks (queue), an LLL or an array would probably be a better
+data structure to work with. An LLL obviously would require traversing, which
+is not efficient, but it makes more sense than working with a CLL when it comes
+to adding, removing, and manipulating a list of tasks to complete an activity.
+When we edit how to complete and activity or algorithm, we would never want to
+remove task 1 and then add a new task 1 to the rear of a list. We would want to
+replace task 1 and keep it in the same position. That being said, it seems like
+an array would actually be the best data structure to work with. The major
+downside would be that the number of tasks to complete an activity would become
+limited. However, we would be able to find the task number and then replace it,
+if need be. Another array flaw would be if we need to add a task between data,
+but this was not a part of the assignment scope to begin with. If we are only
+focusing on adding to the end of the list or replacing existing tasks, an array
+would be the best choice.
+
+For the list of activities (stack), I think the LLL of Arrays was the best data
+structure choice in terms of this assignment. We wanted access to the most
+recent addition to the list and the stack makes this efficiently possible. Also,
+when displaying the data, less traversal is needed, which makes the LLL of
+Arrays a better choice than a data structure like an LLL. In this assignment, I
+decided to label all pushed queues as trial numbers. If we were to want to
+search for a specific trial number, then this data structure would become less
+efficient. We are in the beginning process of learning about table Abstract Data
+Types (ADT) such as Hash Tables and Binary Search Trees (BST), but I feel that 
+one of these data structures would then become the best choice for this
+assignment. Traversing to find a specific trial number would become much more
+efficient with a Hash Table or BST.
+
+What was most efficient about both data structures is that not much traversal 
+was needed to complete the assignment's tasks. For the CLL, we were focusing on
+only adding to the rear and removing from the front of the list. For the LLL of
+Arrays, we were focusing on adding to the top and removing from the top of the
+list. These actions take very little code and require almost no traversal, 
+making them very efficient data structures. As mentioned above, the areas that
+are not as efficient show themselves when we want to do more than what the
+assignment asks for. If we were to concern ourselves more with where we are 
+adding and removing data, a CLL might not be the right choice. If we were to 
+concern ourselves more with searching for specific activity trials, an LLL of
+Arrays might not be the right choice either.
+
+Compared to our last assignment, I am very happy with how this program turned
+out. In terms of what the assignment asks for, I do not think I would change
+anything besides the usual desire to make my code as clean as possible. If we 
+were to expand more on the assignment and it were later in the term, I would 
+have loved to experiment with Hash Tables and BST's. Referencing my beginning
+knowledge with BST's, I know there would be an issue with how the data is
+distributed because the trials would be coming in in ascending order, which
+would create a terrible tree. That being said, for this assignment, maybe Hash
+Tables would be the correct Table ADT to work with. It would allow for multiple
+activities to be stored at the same trial number level.

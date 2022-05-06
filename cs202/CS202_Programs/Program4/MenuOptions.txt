@@ -1,0 +1,45 @@
+B|Korean Twist|Taco|2.50|1|M|Sweet Sauce|0|false
+B|Korean Twist|Burrito|7.00|1|M|House Sauce|0|false
+C|Korean Twist|Rice Bowl|8.00|1|M|Bulgogi Beef|false|false
+C|Korean Twist|Taco Combo|8.50|1|M|Teriyaki Chicken|true|false
+D|Korean Twist|Yakisoba|8.00|1|M|true|None|Regular
+C|Ali Baba Takeaway|Gyro|8.99|1|M|Lamb|false|false
+C|Ali Baba Takeaway|Shawarma Wrap|8.99|1|M|Chicken|false|false
+D|Ali Baba Takeaway|Spring Rolls|8.99|1|M|true|None|Regular
+D|Ali Baba Takeaway|Onion Rings|7.50|1|M|true|None|Regular
+B|Ali Baba Takeaway|Curly Fries|7.50|1|M|Regular Sauce|0|true
+D|Don Pedro|Taco|1.75|1|M|false|None|Regular
+D|Don Pedro|Taquitos|8.75|1|M|true|None|Regular
+B|Don Pedro|Chicken Salad|8.99|1|M|Chili Sauce|0|false
+B|Don Pedro|Sope|2.99|1|M|Fun Sauce|0|false
+C|Don Pedro|Taco Salad|7.99|1|M|Beef|false|false
+B|Gyro Place|Falafel Sandwich|11.00|1|M|Tzatziki Sauce|0|false
+B|Gyro Place|Chicken Wings|13.00|1|M|Regular Sauce|0|true
+D|Gyro Place|Shawarma Wrap|11.00|1|M|true|None|Regular
+D|Gyro Place|Shawarma Plate|14.00|1|M|false|None|Regular
+C|Gyro Place|Tzatziki Plate|10.00|1|M|Chicken|false|false
+C|Habibi Sandwich|Grape Leaves|10.95|1|M|Chicken|false|false
+C|Habibi Sandwich|Tzatziki Plate|9.95|1|M|Chicken|false|false
+B|Habibi Sandwich|Lamb Salad|17.95|1|M|House Sauce|0|false
+B|Habibi Sandwich|Cabbage Rolls|12.95|1|M|Traditional Sauce|0|false
+D|Habibi Sandwich|Chicken Salad|15.95|1|M|false|None|Regular
+D|Khob Khun Thai Food|Pad Thai|6.00|1|M|true|None|Regular
+D|Khob Khun Thai Food|Cashew Nut|6.00|1|M|true|None|Regular
+B|Khob Khun Thai Food|Fried Rice|6.00|1|M|Spicy Sauce|0|true
+C|Khob Khun Thai Food|Pad Kee Mao|6.00|1|M|Chicken|false|false
+C|Khob Khun Thai Food|Red Curry|6.00|1|M|Chicken|false|false
+C|Lord Of The Wings PDX|Seafood Gumbo|14.00|1|M|Fish|false|false
+B|Lord Of The Wings PDX|Chicken Wings|14.00|1|M|House Sauce|0|true
+B|Lord Of The Wings PDX|Ribs|14.00|1|M|House Sauce|0|false
+B|Lord Of The Wings PDX|Bacon Cheeseburger|12.00|1|M|BBQ Sauce|0|false
+B|Lord Of The Wings PDX|Chicken Sandwich|12.00|1|M|Traditional Sauce|0|false
+D|kBAP|Bibimbap|8.00|1|M|false|None|Regular
+D|kBAP|Kimchi Porkland|7.00|1|M|true|None|Regular
+C|kBAP|Manna Tofu|7.00|1|M|Tofu|false|false
+D|kBAP|Chamchi Me|7.00|1|M|true|None|Regular
+C|kBAP|Spam It|7.00|1|M|Spam|false|false
+D|Tierra Del Sol|Taco|3.00|1|M|false|None|Regular
+D|Tierra Del Sol|Enchiladas|11.50|1|M|false|None|Regular
+C|Tierra Del Sol|Del Sol's Bowl|7.50|1|M|Chicken|false|false
+C|Tierra Del Sol|Quesadilla|10.00|1|M|Chicken|false|false
+B|Tierra Del Sol|Rice Bowl|5.00|1|M|House Sauce|0|true

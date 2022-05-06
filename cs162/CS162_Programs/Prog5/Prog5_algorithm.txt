@@ -1,0 +1,102 @@
+Connor Williams
+CS162 - Introduction to Computer Science
+jcwill@pdx.edu
+June 1, 2021
+
+Program 5 - Favorite Animals List Algorithm
+
+This program will allow a user to create a list of their favorite animals,
+where they can add a new animal, display the animals and their information in
+the list, display animals of a particular breed, and remove a particular
+animal by name. An animal's information will be grouped in a structure,
+called 'node', including the name, the breed, what the user likes about them,
+the number of likes the animal has (or rank), and what the animal likes to
+eat. It will also include the variable 'next' pointing to the 'node' structure
+itself. The following functions will allow the user to use this list
+manipulating program as well as destroy any dynamically allocated memory.
+
+The function 'build' will allow the user to create and/or add to a linear
+linked list of 'node' structures. The function will check if the 'head'
+variable pointing to the 'node' is empty. If it is, a new 'node' will be
+dynamically allocated to the 'head' variable. User entered data from the 
+passed in 'node' structure variable, 'new_animal', (including name, breed, 
+what the user likes about them, the number of likes the animal has, and what 
+the animal likes to eat) will be assigned to each associated 'node' structure
+member with 'head' pointing to each member. Finally, NULL will be assigned to
+'head' pointing to the 'node's 'next' member. If 'head' is not an empty
+list, then if the 'new_animal' structure's 'rank' variable (the number of likes
+the animal has) is greater than the 'rank' value that 'head' is pointing to,
+then a new 'node' is dynamically allocated to a 'temp' variable pointing to the
+'node' structure. Each member of the 'node' structure, pointed to by 'temp' is
+assigned to each respective 'new_animal' struture member. Then, 'head' is 
+assigned to the 'next' variable, pointed to by 'temp'. Finally, 'temp' is 
+assigned to 'head'. Otherwise, a 'current' and 'previous' variable, along with
+the same 'temp' variable are initialized, pointing to the 'node' structure.
+The 'head', pointing to the 'node's 'next' member is assigned to 'current'.
+The 'current' variable is assigned to 'previous'. The 'temp' variable is, once
+again, assigned a new dynamically allocated 'node'. Again, each member of the
+'node' structure, pointed to by 'temp' is assigned to each respective
+'new_animal' structure member. While 'current' is not NULL and the
+'new_animal' structure's 'rank' member is less than the 'rank' value that
+'current' is pointing to, then the linear linked traverses. The 'current'
+variable is assigned to 'previous' and the 'next' member of the 'node'
+structure, pointed to by 'current' is assigned to 'current'. When this loop is
+finished, the 'temp' variable will be assigned to the 'next' member of the 
+'node', pointed to by 'previous', and the 'current' variable will be assigned
+to the 'next' member of the 'node' structure, pointed to by 'temp'. This
+function will take the 'head' variable, pointing to the 'node' structure,
+passed by reference, and the 'node' structure variable, 'new_animal', passed
+by reference, as arguments, and will return nothing.
+
+The function 'display' will display all the contents of the linear linked list.
+If the 'head' of the linear linked list is an empty list, then return.
+Otherwise, while 'head' is not NULL, print to the user each member of the
+'node' structure, pointed to by 'head'. Then, assign the 'next' member of the
+'node' structure, pointed to by 'head' to the 'head' variable. Continue until
+the 'head' is NULL. This function takes the 'head' variable, pointing to the
+'node' structure, passed by value, as an argument and returns nothing.
+
+The function 'search_breed' will display all the contents of the linear linked
+list that match a particular animal breed. If the 'head' of the linear linked
+list is an empty list, then return. Otherwise, while the 'next' member of
+the 'node' structure, pointed to by 'head', is not NULL, if a user entered
+breed search parameter matches the 'breed' member in the 'node' structure, 
+pointed to by 'head', then print out each member that 'head' is pointing to.
+Traverse to the next node by assigning the 'next' member of the 'node' 
+structure, pointed to by 'head', to 'head'. The while loop checks again and if 
+it is not a match, do the same traversal. Continue until the 'next' member of 
+the 'node' structure, pointed to by 'head', is NULL. This function takes the 
+'head' variable, pointing to the 'node' structure, passed by value, as an 
+argument and returns nothing.
+
+The function 'remove_item' will allow the user to remove an animal from the
+linear linked list by searching by name. If the 'head' of the linear linked
+list is an empty list, then return. Otherwise, if the 'name' member of the
+'node' structure, pointed to by 'head' matches the user entered name
+search parameter, then a 'temp' variable will be initialized with the 'next'
+member of the 'node' structure, pointed to by 'head', assigned to it. 
+Deallocate the memory of each member of the 'node' structure, pointed to by
+'head, then deallocate the memory of 'head' itself, then assign the 'temp' 
+variable to 'head'. Otherwise, a 'current' and 'previous' variable, pointing 
+to the 'node' structure will be initialized. The 'next' member of the 'node' 
+structure, pointed to by 'head', is assigned to 'current' and 'current' is 
+assigned to 'previous'. While 'current' is not NULL and the 'name' member of 
+the 'node' structure, pointed to by 'current', does not match the user entered 
+name search parameter, assign 'current' to 'previous' and the 'next' member
+of the 'node' structure, pointed to by 'current', to 'current' (traverse the
+list). When the loop finishes, if 'current' is not NULL, then assign the 'next' 
+member of the 'node' structure, pointed to by 'current' to the 'next' member of 
+the 'node' structure, pointed to by 'previous'. Then, deallocate the memory of
+each member of the 'node' structure, point to by 'current', then deallocate
+the memory of 'current' itself. Otherwise, 'current' is NULL and there are no 
+matches. This function takes the 'head' variable, pointing to the 'node' 
+structure, passed by reference, as an argument and returns true or false.
+
+The function 'destroy' will deallocate all the memory from the linear linked
+list. If the 'head' of the linear linked list is an empty list, then return.
+Otherwise, initialize a 'temp' variable, pointing to the 'node' structure and
+assign it the 'next' member of the 'node' structure, pointed to by 'head'.
+While 'head' is not NULL, deallocate the memory of each member of the 'node' 
+structure, pointed to by 'head', then deallocate the memory of 'head' itself. 
+Assign 'temp' to 'head' and repeat again until 'head' is equal to NULL.
+

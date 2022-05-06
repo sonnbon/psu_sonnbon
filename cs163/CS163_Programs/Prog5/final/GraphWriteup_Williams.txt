@@ -1,0 +1,86 @@
+********************************************************************************
+Author: Connor Williams
+Date: August 13, 2021
+Course: CS163 Data Structures
+Assignment: Program 5
+Filename: GraphWriteup_Williams.txt
+********************************************************************************
+
+1) 
+
+Cycle: A practical example of a cycle would be if we were to use an application
+program to plot out a roundtrip flight plan that takes you to every available 
+airport you desire to go to without travelling to those airports more than once.
+In this way, you would complete a cycle, starting and ending at your initial
+location, while travelling through every other location on the course only once.
+
+Path: As we imitated in our homework assignment, a good example of using a path
+in an application program would be if we were trying to see how far we could 
+travel from one trailhead to another, whether it is just to the next adjacent 
+trailhead or to a trailhead connected by other adjacent trailheads. By examining
+the path, or sequence of edges that can be taken from one trailhead to another,
+we would be able to find this result.
+
+Weighted Graph: The previous two examples can be used to show how this concept
+can be used in an application program. For plotting a flight path, we can use an
+application program to find out the distances between between each airport. We
+could even add a big group of data to each edge, describing not only distances,
+but weather conditions between each airport. For the homework assignment, we
+could also use distances between trailheads, but more interestingly, we could
+have added terrain conditions (incline, decline, elevation, etc.) between each
+trailhead.
+
+Edge List: Getting away from the last two examples, I can imagine a video game
+where you are trying to escape a building by choosing to go through different 
+doors. In each room, you are allowed to look through every door in that room,
+seeing into the next room, but are not allowed to see where that next room goes.
+In doing so, you are able to see all the adjacent rooms to you position, but 
+not what those rooms are adjacent to until you specifically travel to them.
+
+Connected Graph: A practical example of a connected graph would be if we were
+to use an application, such as Google Maps, to plot out a road trip in a
+sparsely populated area of the United States, where there are only so many
+connecting roads. You could get to any of the locations you are trying to get
+to but only by taking specific roads or paths that connect every pair of
+destinations. This would mean you might not be able to directly drive to some
+locations from your starting point without having to drive through other
+locations first.
+
+Complete Graph: Using the flying example again, an application program could be
+used to zoom in on areas of a map to search for the big clusters of airports 
+that all have connecting flights to each other, meaning you could get to any
+airport from any chosen starting airport. To go further, if we were to find a
+large sample of aiports where there is an edge between every pair of locations,
+it might be time to re-examine how efficient these flight paths are. On the
+other hand, if the application found areas of low connection, then completed 
+graphs could be made in those areas, allowing for shorter or more convenient
+flights for people.
+
+2)
+
+Depth First Traversal, using recursion - Algorithm
+
+Assuming we already have the index of the array of our starting vertex element:
+
+a) Check if the indexed element's head pointer is NULL.
+  a.1) If it is, return to represent that the edge list is empty.
+b) Check if the indexed element's vertex has already been visited.
+  b.1) If it has, return to represent that this traversal is complete.
+c) Otherwise, mark this indexed element's vertex as visited.
+d) While the indexed elements head pointer is not NULL, call the function, 
+   recursively, passing in the head pointer as its argument, which will repeat 
+   steps 'a' through 'c' until the indexed element's head pointer is NULL or the 
+   original vertex is visited again.
+e) Within the while loop, after the recursive function call, set the indexed 
+   element's head pointer to its next pointer.
+f) Once the while loop ends, return to represent completion of the operation.
+
+
+
+
+
+
+
+
+
+

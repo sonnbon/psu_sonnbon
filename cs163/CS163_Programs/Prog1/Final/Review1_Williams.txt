@@ -1,0 +1,55 @@
+Connor Williams
+CS163 - Data Structures
+Program Assignment # 1
+July 9, 2021
+
+Review 1
+
+I believe the data structure selected for this assignment, Linear Linked Lists,
+performed relatively well, even with the inefficiency of my final program. The
+Linear Linked List data structure allowed for a more flexible list size, while
+also making it easy to sort data. Whether it was sorting alphabetically or by
+frequency use, Linear Linked Lists make it easier to "shift" data between
+other data. In terms of efficiency, I think this assignment has shown that a
+Linear Linked List within another Linear Linked List is tasking on memory use.
+A Linear Linked List of Arrays might have been a more efficient option, in
+terms of memory and number of tasks. However, it would come with the 
+limitations of each array having a max size once decided upon. It would also be 
+more difficult to sort both alphabetically and by frequency. If the flexibility 
+of the list size were to be sacrificed, this program would probably have been 
+more efficient using a Linear Linked List of Arrays or an Array of Linear Linked 
+Lists. I do not think an Array of Arrays would have been efficient. It would 
+have been too difficult to figure out list sizes as well as sorting data. All 
+this being said, while the data structures used for this assignment might not
+have been the most efficient, I do believe they were the best option for what
+the assignment was asking for. To be able to add and remove as many items as you 
+want, while also being able to sort a list within a node that is also getting 
+sorted in its own list is definitely a competitive reason to stick with this
+method of programming. If the assignment asked for more specific tasks such as
+grouping data by type, then maybe a Linear Linked List of Arrays would have
+been better. The Linear Linked List would group different types within each 
+array.
+
+Concluding this assignment, I've come to the realization that I do not 
+find much of my program to be efficient. It adds, sorts, and removes data, and
+makes it through all of the test cases, but the written code is no where near 
+as clean as I would have liked. With time running out and the amount of 
+knowledge I am still gaining everyday, I just could not get this program to 
+where I would have liked it to be. I also found memory leaks using the valgrind 
+leak check test, but could not fix this issue in time. So, while the program 
+compiles and works, I do not think I can claim any of it to be efficient.
+
+Another area I struggled with was using recursion correctly with wrapper
+functions. I used recursion in this assignment but I do not think I used it in
+a way that truly complements wrapper functions. The code for both the wrapper
+functions and the recursive functions are nearly identical, which I do not think
+is the correct way to go about this. This leads into what I would do 
+differently if I had more time to solve the problem. First, I would want to 
+clean up all my functions using wrappers and recursion, and make sure I am 
+truly utilizing them correctly. Second, I would have liked to find and fix my 
+memory leaks. Last, I definitely would have switched my structures out for 
+classes (not including the nodes). This would have made allocating and 
+deallocating with the use of constructors and destructors, as well as setting 
+data up to be added to a list, much easier. I feel like I wasted space in the
+way I used set functions to then be passed into add functions, which is 
+something I think I could have avoided if I used only classes instead.

@@ -1,0 +1,106 @@
+Connor Williams
+CS 162 - Introduction to Computer Science
+April 19, 2021
+
+Algorithm for Program #2: Shorthand mapping program that takes three
+shorthand notated words and replaces them with their actual respective words in
+an outputted sentence.
+
+1. Initialize any variables or state of information.
+  a. Assign counters to zero to help the user enter in a word and its 
+     shorthand notation three times, and to check for full matches.
+2. Welcome the user.
+  a. Describe the purpose of this program.
+    i. Display "The purpose of this program is to help you with your shorthand
+       notes! This program allows you to replace three of your shorthand notated
+       words with the actual words you would have written if you had the time!"
+  b. Indicate what the user is going to do.
+    i. Display "In order for this program to help you, you must first enter
+       the three words you wish to be replaced when taking shorthand notes. You
+       will then enter a sentence representing your notes with those three
+       words in shorthand notation. This program will then display your notes
+       back to you with your three notated words replaced with the actual
+       words!"
+  c. Mention valid versus invalid inputs.
+    i. Display "Valid entries for your shorthand notation include characters as
+       well as integers, but do not include spaces. However, the actual word
+       may include spaces. For example, 'Assignment 2' is valid! If you
+       want to capitalize your word, make sure only the first letter of each
+       word is capitalized. Please do not exceed 200 characters with any of
+       your input."
+3. Prompt and read in what three words the user would like to be replaced when
+   taking short hand notes.
+  a. Display a prompt asking the user for a word they wish to be replaced when
+     taking shorthand notes.
+  b. Read in the word.
+  c. Check if the word is too long.
+  d. If it is, display an error message and repeat step 3.a.
+  e. Otherwise, if there are capitalized letters, check if they are anywhere 
+     but the first element or after a space.
+    i. If they are, display an error message and repeat step 3.a.
+  f. Display a prompt asking the user for the shorthand notation they wish to
+     represent that word.
+  g. Read in the shorthand notation.
+  h. Check if the shorthand notation has any spaces or if it is too long.
+  i. If it does or is, display an error message and repeat step 3.f.
+  j. Otherwise, echo back to the user the word and the shorthand notation they
+     inputted.
+  k. Display a prompt asking the user if they are satisfied with their input.
+  l. If the response is yes, then repeat step 3 until the counter has allowed
+     for three loops.
+  m. Else if the response is neither yes nor no, then display an error message
+     and repeat step 3.k.
+  n. Otherwise, the user is unsatisfied with their input, so do not increment
+     the counter, then repeat step 3.
+4. Prompt and read in the users sentence, which represents their notes in
+   shorthand notation.
+  a. Display a prompt asking the user for a sentence including any or all of
+     their shorthand notated words.
+  b. Read in the sentence.
+  c. Check if the sentence is too long.
+  d. If it is, display an error message and repeat step 4.
+  e. Otherwise, check if the sentence includes any of the shorthand notated 
+     words.
+  f. If it does not, display an error message to the user and repeat step 4. 
+5. Display the resulting sentence with the shorthand notation replaced with the
+   actual words.
+  a. Check for matches in the sentence to the inputted shorthand notation.
+  b. If the indexed element of the sentence does not match the same indexed
+     element of the inputted shorthand notation, add indexed element of the
+     sentence to a new array.
+  c. Else if the indexed element of the sentence does match the same indexed
+     element of the inputted shorthand notation, save the index number to note
+     where the match first occurred and check for matches in the following 
+     elements of the sentence up to the length of the shorthand notated word.
+    i. If the next element in the sentence does not match the next element in 
+       the shorthand notation, add the previous (saved) indexed element of the
+       sentence to the new array and repeat 5.b continuing from the next 
+       indexed element.
+   ii. Else if the next element in the sentence does match the next element of
+       the shorthand notation, increment a counter to track the match and 
+       repeat 5.c.i for the length of the shorthand notated word.
+      A. If the resulting counter is equal to the length of the shorthand
+         notation and the next element of the sentence is a space, add each
+         element of the word associated with the shorthand notation to the next
+         element of the new array.
+        I. Save the sum of the length of the added word and the index number of 
+           where it was added to the new array. This sum is the new index
+           starting point for any element added to the new array.
+       II. Repeat step 5.b from the index sum of the previous (saved) indexed
+           element of the sentence and the length of the shorthand notation.
+           This sum will put the index at the next element after where the
+           shorthand notation was in the sentence.
+      B. Otherwise, the counter does not equal the length of the shorthand 
+         notation or there is no space after the shorthand match in the sentence
+         (indicating that it is part of another word), then add the previous 
+         (saved) indexed element of the sentence to the new array and repeat 
+         5.b from the next indexed element.
+  d. Repeat step 5.a for the next shorthand notation.
+  e. Assign a '\0' to the end of the new array with its length used as its
+     index.
+  f. Display the new sentence to the user.
+6. Prompt and read in whether the user would like to start over.
+  a. If the response is yes, then repeat step 3.
+  b. Else if the response is neither yes nor no, then display an error message
+     and repeat step 6.
+  c. Otherwise, thank the user for using the program and exit.

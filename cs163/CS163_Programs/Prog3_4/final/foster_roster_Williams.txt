@@ -1,0 +1,48 @@
+Dog|Australian Shepherd|Roux|Needs lots of exercise and attention|0.7|Ran away to make more friends, waiting for owner
+Cat|Maine Coon|Mittens|Likes kids but not other animals|5|Found while hunting outdoors with no collar
+Horse|Clydesdale|Star|Cannot be ridden due to back issues|6|Found in a wild meadow
+Goat|Fainting goat|Billy Bob|Cannot be around too much excitmenet|2|Found fainted along gravel road
+Dog|Australian Shepherd|Nova|Needs house dog "proofed"|3|Owners are moving to another country
+Bird|Crow|Shadow|Keep away from shiny things|1|Caught stealing an earing
+Dog|Rat Terrier|Ernie|requires humans to watch him eat kibble|14.2|the goodest boy on the planet
+Cat|Maine Coon|Sparky|needs a home without major conductors of electricity|9|possibly a pokemon
+Fish|Goldfish|Magikarp|NO CHILDREN|36|seriously no children
+Snake|Ball Python|Scaley Dog|is deathly afraid of living mice|2|such a good snake
+Dog|Golden Retriever|Potato|not neutered due to a medical condition|1.4|so soft loves kisses
+Urchin|Purple Sea Urchin|Sharp Charlie|sharp, does nothing, cannot be in a tank with sea urchins|75|it will probably outlive you so forever home is not the goal
+Cat|Sphynx Cat|Gooey|Gooey needs little sweaters to keep her warm|3|found cat infiltrating the capital in january 2021
+Dog|German Shepherd|Cigarette Puppy|She likes to go on walks with someone that smokes|2.4|goodness she's so sweet
+Rat|Fancy Rat|Josh|Josh loves tickles, chocolate, and dominating|1.3|found in the sewer, honestly probably not a pet
+Dog|Border Collie|Tipsy|will only eat cheetohs and needs a beer before bed|16|found in the dumpster behind a cheetohs factory as a puppy
+Bird|African Grey Parrot|Alex Honnold|loves to free solo epic rock faces|4|found on craigslist
+Bird|New Caldonian Crow|Dinosaur|can escape any cage|2.1|smuggled into the country by a bird thief
+Goat|Nigerian Dwarf Goat|Eirinn|needs milking|4.6|former owner died, not because of anything Eirinn did
+Fish|Pufferfish|Sonic the Hedgehog|requires a freshwater tank|6.3|survived the bombing of a sushi restaurant
+Dog|Rat Terrier|Burt|super affecionate puppy but eats other dogs|1.2|the only survivor of an abandoned puppy mill (hence eats dogs)
+Cat|Maine Coon|Igor|cat can teleport through time and space|17|immortal cat originally from the Romanov Dynasty
+Cat|Tabby|Gary|must beg for food 2 hours before actual feeding time|10.3|Got bored and decided to try something new
+Dog|Pitbull|Dinah|allergic to everything but super cute so it's okay|5.1|Found eating concrete (this is all true)
+Cat|Tabby|Alice|will not use the litter box, good luck|12|Appeared out of thin air
+Dog|Mutt|Izzy|likes to dig holes and sleep in them|4.9|Found roaming the streets of Santa Fe
+Dog|Bernedoodle|George|must jump on or tackle anything that moves, lovingly|0.9|Full of fur and love and warmth
+Dog|English Bulldog|Egon|needs body suit diaper for oopsies|10|He's an oldie, but there's no one more loyal
+Frog|Poison Dart|Gus|loves everyone but can never go near them|1.2|DO NOT TOUCH
+Bird|African Grey Parrot|Keenya|hates almost everyone and everything|28|Found imitating your laugh in the middle of the night
+Mouse|Mossflower|Matthias|needs armor, a shield, and a sword|13|Found in Mossflower Woods
+Hamster|Unknown|Junior|you think he needs a ball to roll in, not realizing how tramatizing that must be|3.4|Found speeding in a school zone
+Dog|Corgi|Brie|Eats only what she is named after|8.6|Made of other Corgi's stacked on top of each other
+Horse|Arabian|Nightmare|loves pets on the face, loves carrots, spooked by the wind|9|She'll throw you to the ground, not fun to ride
+Dog|Australian Shepherd|Riff|must be together with his sister Roney|8|A furry cuddle ball of joy
+Dog|Australian Shepherd|Roney|must be together with her brother Riff|8|Not a furry cuddle ball, but still a bundle of joy
+Cat|Siamese|Cyan|literally pukes 9 times a day|14|She hates people and has the most annoying meow but you can't not love her
+Chicken|Rooster|Ned|needs a shoulder to perch on|1|the most amazing friend
+Fish|Angelfish|One-Eyed-Willy|Has one eye due to getting in a fight with a Beta fish|1|Found in an abandoned tank
+Fish|Beta|Siren|Fiesty, not good with other fish|1|Found in same abandoned tank as another fish
+Fox|Arctic Fox|Snowflake|Very shy and not good with other animals|2|Was bred for fur then captured and abandoned
+Dog|Chow Chow|Bear|Not good with animals or children, but great guard dog|3.5|Left at a park
+Reptile|Bearded Dragon|Davakiin|Likes belly rubs and bugs|1.2|Found in an alley next to abandoned pet store
+Cat|Ragdoll|Rose|Loves cuddles and family friendly|2.3|Found in an alleyway, was definately a pet at some point
+Bunny|Checkered Giant|Checkers|Likes lettuce and nuzzling people who are sad|1.5|Found next to an open cage
+Dog|German Shepherd|Moritz|Cuddly and loving, but scared of groups of people|3|Rescued from dog fighting
+Cat|Tabby|Sunshine|Likes solitude and lounging on the couch|5|Owner could no longer take care of her
+
