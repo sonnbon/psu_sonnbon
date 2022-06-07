@@ -1,0 +1,39 @@
+
+
+//Dynamic binding needs the following:
+
+List * ptr; //base class pointer - it can point anywhere in the hierarchy derived
+
+//client
+ptr = new CLL; //upcasting
+
+
+display(ptr);
+display(*ptr);
+
+CLL object;  object.display(); //static binding
+CLL *pointer = new CLL;   pointer->display();  //static binding
+
+//Data structure
+List ** array = new List * [some_size]; //Array of list pointers
+array[0] = new CLL;
+array[1] = new DLL;
+array[2] = new LLL;
+array[3] = new CLL;
+
+for (int i = 0; i < some_size; ++i)
+    display(array[i]);  //OR you could write array[i]->display();
+
+=======================================
+
+void display(List * ptr)
+{
+    //WE HAVE NO CLUE where we are pointing right now? In terms of data types
+    ptr->display();  //ptr->insert(); - calling any of the virtual functions
+
+    ptr->some_other_function_not_virtual_not_base_class(); //syntax error!!
+}
+
+void display(List & reference)
+{
+    reference.display(); //dynamic binding

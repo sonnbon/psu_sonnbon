@@ -1,0 +1,12 @@
+James	C	Williams
+234897	CS-162	00
+
+Connor	J	Baron
+234783	MTH	001
+
+James	C	Williams
+-1172599296	ü	
+
+James	C	Williams
+2394872	CS	003
+

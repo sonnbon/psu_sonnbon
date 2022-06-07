@@ -1,0 +1,77 @@
+STYLE SHEET
+
+CS 162: Introduction to Computer Science
+ 
+
+Submit programs only in electronic forms. The comments at the beginning of your program must have  your name, email address, program # being submitted (e.g., Program  #1), and the date.
+
+DISCUSSION OF YOUR ALGORITHM
+	
+1. Algorithms for your programming assignments are turned in prior to the corresponding program; they have a separate due date and they may not be turned in late.
+* Algorithms should be 400-600 words in length.
+* For the first two programs, algorithms should be written in outline form using a step-by-step algorithm approach. They should discuss the major tasks and any details that are not obvious without planning. 
+* For the third and fourth programs, algorithms should be written in paragraph form discussing the major issues that need to be resolved with each function.
+* No algorithm is submitted for the last program.
+* Algorithms may be submitted using word, pdf or plain text. You may also attach pictures such as flow charts or data flow diagrams.
+
+2. Your algorithm should be written in English using complete sentences. 
+* Each major task should be described (in one sentence)
+* Limit the use of pseudo code.
+* Please note that algorithms should not look like C++ code; words such as "cin", "cout", "++", "--" should not be part of your algorithm. Instead, they should describe what each major task in your program accomplishes.
+
+3. NOTE: AN ALGORITHM IS NOT CONSIDERED TO BE THE SAME AS YOUR PROGRAM! Any algorithms submitted which look identical to C++ code will not be accepted. 
+
+STYLE of SOURCE CODE     
+Requirements for internal documentation in the form of comments are listed below.  
+1. A heading explaining what the program does and listing the name of the program author, date, class number and program number.  A heading must be supplied indicating the purpose of the entire program; in addition, each separate function should have a heading describing it purpose and arguments.
+2. A comment following each variable declaration telling what it will be used for.
+3. Comments to explain any program action whose purpose is not obvious.
+4. Select mnemonic names for identifiers that relate to their purpose; single character variable names should only be used for loop control variables and array indices.
+5. When we use separate files, each file must have a comment that includes your name, date, class number, program number, and the purpose of the functions that exist in the file.
+
+
+
+
+The following are source code format requirements.
+1. A consistent pattern of indentation.  See the C++ style requirement for examples.
+2. White space (blank lines) to separate program sections.  At least three lines of white space must separate functions.
+3. If functions are used, make sure to include a header comment for each function; this should explain the purpose of the function as well as describe the INPUT and OUTPUT parameters. In fact, every function must have a header comment.
+
+The following should be avoided.
+1. NEVER us global variables in these programs!
+2. Avoid the use of exit, continue, or break to alter the flow of control of loops
+3. Avoid using while(1) type of loop control
+4. Avoid using the string class – instead use arrays of characters
+
+
+ORDER OF FILES for Programs with multiple source files
+
+1. When turning in projects with multiple files (starting with program #3), make sure to zip the files together so that only one upload occurs to D2L. Ask the lab assistants to demonstrate!
+
+2. Header files   (.h files)
+* Comment the beginning of this file with:
+a) your name, class number, project number, name of the file
+b) a description of what this file contains (purpose of the header file)
+c) structures, classes, prototypes definitions
+
+3. Implementation files of your class member functions  (.cpp files)
+* Comment the beginning of each .cpp file with:
+a) your name, class number, project number, name of the file
+b) a description of what this file contains (purpose of the header file)
+* Place the code in the following order (for a class' implementation):
+a) constructors -- default, ones with arguments
+b) destructor (if you have one)
+c) remaining member functions
+* If your destructor calls another function -- then place that function immediately after the destructor
+4. Implementation of the main and any other .cpp files
+
+
+IMPORTANT NOTES:
+1. Submit your program to the D2L Dropbox for the appropriate assignment. 
+2. If you submit your program to the wrong dropbox, it will not be graded correctly
+3. It is best to wait to submit your program to the D2L dropbox until you are satisfied. Only one version of your program will be graded.
+4. If you submit a program to the D2L dropbox after the late due date, the grader is under no obligation to grade the assignment unless you have instructor approval.
+5. With D2L, you must first upload the file(s) and then select the “Submit” button. Forgetting to do so will cause the uploaded files to be lost
+6. Always keep a backup of your programs!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+REMINDERS: Every program (and file) must have a comment at the beginning with your first and last name, the class (CS162), and the assignment number. This is essential!

@@ -1,0 +1,38 @@
+
+
+/*
+Question to ask:
+1. Is the problem repetitive?
+2. Is part of the problem repetitive vs not?
+   For example, if we are removing the first node and counting
+   the number of nodes left, I'd remove the first node and THEN
+   call a recursive function. Break it apart!!!
+   - A wrapper function that does the NON repetitive part
+   - A recursive function that does the repetitive part
+
+   (when we use classes, the public functions should not have NODE pointers
+   as arguments. What this means that when we use a class, we will
+   actually need to have a public "wrapper" function that kick starts
+   the private recursive function with a node pointer as an argument)
+
+For the repetitive part:
+3. What is the simple stopping condition (the base case)?
+   (eg., if head is NULL)
+   -plan out what to do
+4. Is there another stopping condition (or base case)?
+   -plan out what to do
+5. Is there something that needs to be done in this invocation?
+   (outputting? counting? summing?)
+   -plan out what to do
+6. How do we get to the next smaller subproblem?
+   (recursive call, that needs to work with a smaller part of the data)
+   (like calling the function with head->next)
+   DON'T traverse
+   LEAVE BEHIND the notion of a previous pointer. RARELY NEEDED.
+   DONT'T put a RETURN statement on your function call automatically
+   MAKE SURE to CATCH the value being returned from the function
+   (like variable = function_call(head->next); )
+7. Is there something that needs to be done AFTER the recursive call?
+   -if yes, plan out what to do
+8. Make sure we return the correct information
+*/
